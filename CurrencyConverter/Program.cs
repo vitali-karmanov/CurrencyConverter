@@ -25,8 +25,8 @@ namespace CurrencyConverter
             currencyManager.UpdateCurrency("ARS", 69.20);
 
             // Some examples using GetCurrencyExchangeRate
-            Console.WriteLine("EUR to USD (Exchange Rate): " + currencyManager.GetCurrencyExchangeRate("EUR") + " (DB)");
-            Console.WriteLine("EUR to USD (Exchange Rate): " + currencyManager.GetCurrencyExchangeRate("EUR", true) + " (API)");
+            Console.WriteLine("USD to EUR (Exchange Rate): " + currencyManager.GetCurrencyExchangeRate("EUR") + " (DB)");
+            Console.WriteLine("USD to EUR (Exchange Rate): " + currencyManager.GetCurrencyExchangeRate("EUR", true) + " (API)");
 
             //Display all the currencies
             currencyManager.GetAllCurrencies().ForEach(c => Console.WriteLine(c.ToString()));
